@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="App">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="7" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="163" y="77" width="766" height="604"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="9e713" class="javax.swing.JTextField" binding="sizeField">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="9" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="1d1bc" class="javax.swing.JComboBox" binding="algoSelectionField">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="9" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="DFS"/>
+            <item value="BFS"/>
+            <item value="A* (h1)"/>
+            <item value="A* (h2)"/>
+          </model>
+        </properties>
+      </component>
+      <component id="cf905" class="javax.swing.JButton" binding="launchButton">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="lancer"/>
+        </properties>
+      </component>
+      <component id="ad322" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="30" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Nœuds générés"/>
+        </properties>
+      </component>
+      <component id="d658d" class="javax.swing.JLabel" binding="generatedText">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="0"/>
+        </properties>
+      </component>
+      <component id="da94" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="30" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Nœuds visités"/>
+        </properties>
+      </component>
+      <component id="412b5" class="javax.swing.JLabel" binding="visitedText">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="0"/>
+        </properties>
+      </component>
+      <component id="f74ba" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="30" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Temps d'exécution"/>
+        </properties>
+      </component>
+      <component id="c9d38" class="javax.swing.JLabel" binding="timeText">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="100" height="-1"/>
+            <preferred-size width="100" height="-1"/>
+            <maximum-size width="100" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="00:00:00"/>
+        </properties>
+      </component>
+      <vspacer id="a98d0">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <grid id="9bdbd" binding="boardContainer" layout-manager="GridBagLayout">
+        <constraints>
+          <grid row="0" column="0" row-span="7" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="600" height="600"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <clientProperties>
+          <html.disable class="java.lang.Boolean" value="true"/>
+        </clientProperties>
+        <border type="none"/>
+        <children/>
+      </grid>
+    </children>
+  </grid>
+</form>
